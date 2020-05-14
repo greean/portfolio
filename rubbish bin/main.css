@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina+2:400,500|Ubuntu:400,500&display=swap');
+
+/*
+font-family: 'Baloo Bhaina 2', cursive;
+*/
+
+body {
+    margin: 15px;
+    background-color: darkgray;
+    padding: 0 20px 0 20px;
+}
+
+*{
+    font-family: 'Baloo Bhaina 2', cursive;
+    padding: 2px;
+    
+}
+h1 {
+    color: crimson;
+}
+ul, ol {
+    margin-left: 25px;
+}
+
+
+
