@@ -1,4 +1,8 @@
-/* Some CSS Setup - nothing to do with flexbox */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Permanent+Marker&family=Roboto&display=swap');
+/*  font-family: 'Fjalla One', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Roboto', sans-serif; */
+
 html {
   box-sizing: border-box;
   min-height: 100%;
@@ -9,18 +13,44 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: large;
+  letter-spacing: 0.5px;
   margin: 0;
   min-height: 100%;
   background-image: url(images/grid.png);
   position: relative;
 }
 
-h1 {
-  text-align: center;
+header {
+  background-color: darkslateblue;
 }
 
-a {
+h1, h2 {
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  color: seagreen;
+}
+
+h1 {
+  padding: 30px;
+  color: azure;
+}
+
+h2 {
+  color: darkslateblue;
+}
+
+/* p {
+  font-size: 20px;
+} */
+
+p.clear {
+  clear: both;
+  padding-bottom: 20px;
+}
+
+.flex-nav a, .footer a {
   color:white;
   font-weight: 100;
   letter-spacing: 2px;
@@ -30,15 +60,15 @@ a {
   display: inline-block;
   width: 100%;
   text-align: center;
-  transition:all 0.5s;
+  transition:all 0.9s;
 }
 
-a:hover {
+.flex-nav a:hover, .footer a:hover {
   background:rgba(0,0,0,0.3);
 }
 
 .wrapper {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   padding:50px;
   background-color: silver;
@@ -70,9 +100,10 @@ a:hover {
 
 .flex-nav ul{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-/*  min-height: 50vh;*/
+  align-items: center;
+  /* min-height: 50vh; */
 }
 .flex-nav li{
   flex: 3; /*FILLS IN THE GAPS WITH BG-COLOR. THE BIGGER THE NUMBER THE BIGGER THE SPACE BETWEEN ITEMS*/
