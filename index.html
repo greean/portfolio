@@ -14,75 +14,158 @@
     <nav class="flex-nav">
       <ul>
         <li>
-          <a href="index.html#dicegame" title="Link to Dice Game">Dice Game</a>
+          <a href="index.html#blockbreaker" title="Link to Block Breaker">Block Breaker</a>
+        </li>
+        <li>
+          <a href="index.html#cyberpet" title="Link to CyberPet">CyberPet</a>
         </li>
         <li>
           <a href="index.html#slack" title="Link to Slack Clone">Slack Clone</a></li>        
         <li>
           <a href="index.html#raven" title="Link to Operation Raven">Operation Raven</a></li>
         <li>
+          <a href="index.html#dicegame" title="Link to Dice Game">Dice Game</a>
+        </li>
+        <li>
           <a target="_blank" href="https://github.com/greean" title="Link to Github page">Github</a></li>
         <li>
           <a href="about.html" title="Link to About Me">About Me</a></li>
       </ul>
     </nav>
-    <div>
-      <h2 >Projects</h2>
-      <h3 id="dicegame">Dice Game</h3>
-      <img src="images/dice_2player.png" align="right" alt="Screenshot of 2 Player Dicegame" style="padding-left: 20px;">
-      <p>
-        The brief for the project was to create a 1 player dice game using javascript and DOM.</P>
-      <ul> 
-        <li>Roll the dice to begin the game</li>
-        <li>The dice appears on the first roll</li>
-        <li>When a dice is rolled, the score adds up</li>
-        <li>Once the score reaches 20, you win.</li>
-        <li>However, if you roll a ‘1’ then you lose</li>
-        <li>If the player won or lost, the player can start the game again</li>
-      </ul>
-      <p>
-        A further challenge was to then create a 2 player version of the game.
-      </p>
-      <ul>
-        <li>
-          <a target="_blank" href="https://greean.github.io/dicegame/" title="Link to Dice Game - 1 Player(deployed on GitHub)">Dice Game - 1 Player</a></li>
-        <li>
-          <a target="_blank" href="https://greean.github.io/dicegame_2player/" title="Link to Dice Game - 2 Players (delpoyed on GitHub)">Dice Game - 2 Players</a></li>
-      </ul>
-      <p class="clear">&nbsp;</p>
-      <img src="images/slack_clone.png" align="right" alt="Screenshot of Slack Clone" width="400px" />
-      <h3 id="slack">Slack Clone</h3>
-      <p>
-        A 3-day team project to create an app using React, based on the communication platform Slack.</p>
-      <p>
-        As well as replicating the look of the Slack platform, due to the time restraints of the project we decided to concentrate on the following main features:</p>
-      <ul>
-        <li>Ability to add a message to the thread</li>
-        <li>Change between users</li>
-      </ul>
-      <p>
-        <a target="_blank" href="https://paddyaa5.github.io/slackProject/" title="Link to Slack Clone app (deployed on Github)">Slack Clone app</a></p>
-      <p class="clear">&nbsp;</p>
-      <img src="images/declassified.jpg" align="right" alt="Declassified stamp" style="padding-left: 20px;">
-      <h3 id="raven">Operation Raven</h3>
-      <p>
-        After a 2 day crash course in Python, this team project required us to create a site incorporating a django database.</p>
-      <p>
-        Using spreadsheet data regarding UFO sighting events in the UK, the brief was to build a database and display the following:
-        <ul>
-          <li>A page listing all events</li>
-          <li>A page that shows an individual event</li>
-          <li>A page that lists all locations</li>
-          <li>A page that lists all events for a given location</li>
-        </ul>
-      </p>
-      <p><a target="_blank" href="https://dry-coast-86813.herokuapp.com/raven/" title="Link to Operation Raven project">Operation Raven</a></p>
-      <p>&nbsp;</p>
+    <h2 >Projects</h2>
+    <div class="project_outer">
+      <div class="project">
+        <h3 id="blockbreaker">Block Breaker</h3>
+        <div class="proj_container">
+          <div class="description">
+            <p>
+              A version of the classic 'Block Breaker/ Arkaniod' game, created using javascript for HTML5 Canvas.
+            </p>
+            <p>
+              After teaching myself a few fundamentals of HTML5 Canvas, I then developed this game where you have to break blocks in the top half of the screen by bouncing a ball off the side of the screen and a 'paddle' near the bottom of the screen, controlled by the user.
+            </p>
+            <p>
+              I've so far included a score, lives for the game and a pause feature - press the 'p' button. However, the game will be developed further to include bonuses that drop from the broken blocks and speed up/ slow down the game.
+            </p>
+            <ul>
+              <li>
+                <a target="_blank" href="https://greean.github.io/block_breaker/" title="Link to Block Breaker game (deployed on GitHub)">Block Breaker</a></li>
+            </ul>
+          </div>
+          <div class="screenshot">
+            <img src="images/block_breaker.png" alt="Screenshot of Block Breaker game" width="400px" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="clear">&nbsp;</p>
+    <div class="project_outer">
+      <div class="project">
+        <h3 id="cyberpet">CyberPet: Gizmo</h3>
+        <div class="proj_container">
+          <div class="description">
+            <p>
+              'CyberPet: Gizmo' is an app where you have to make decisions on how to look after your pet 'Gizmo'. 
+            </p>
+            <p>
+              Built using javascript to manipulate the DOM, you are given 3 random options to choose from in order to increase Gizmo's health or happiness. However, some of the options will have the opposite effect. 
+            </p>
+            <ul>
+              <li>
+                <a target="_blank" href="https://greean.github.io/cyberpet/" title="Link to CyberPet: Gizmo (deployed on GitHub)">CyberPet: Gizmo</a></li>
+            </ul>
+          </div>
+          <div class="screenshot">
+            <img src="images/gizmo.png" alt="Screenshot of CyberPet app" width="400px" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="clear">&nbsp;</p>
+    <div class="project_outer">
+      <div class="project">
+        <h3 id="slack">Slack Clone</h3>
+        <div class="proj_container">
+          <div class="description">
+            <p>
+              A 3-day team project to create an app using React, based on the communication platform Slack.</p>
+            <p>
+              As well as replicating the look of the Slack platform, due to the time restraints of the project we decided to concentrate on the following main features:</p>
+            <ul>
+              <li>Ability to add a message to the thread</li>
+              <li>Change between users</li>
+            </ul>
+            <p>
+              <a target="_blank" href="https://paddyaa5.github.io/slackProject/" title="Link to Slack Clone app (deployed on Github)">Slack Clone app</a></p>
+          </div>
+          <div class="screenshot">
+            <img src="images/slack_clone.png" alt="Screenshot of Slack Clone" width="400px" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="clear">&nbsp;</p>
+    <div class="project_outer">
+      <div class="project">
+        <h3 id="raven">Operation Raven</h3>
+        <div class="proj_container">
+          <div class="description">
+            <p>
+              After a 2 day crash course in Python, this team project required us to create a site incorporating a django database.</p>
+            <p>
+              Using spreadsheet data regarding UFO sighting events in the UK, the brief was to build a database and display the following:
+              <ul>
+                <li>A page listing all events</li>
+                <li>A page that shows an individual event</li>
+                <li>A page that lists all locations</li>
+                <li>A page that lists all events for a given location</li>
+              </ul>
+            </p>
+            <p><a target="_blank" href="https://dry-coast-86813.herokuapp.com/raven/" title="Link to Operation Raven project">Operation Raven</a></p>
+          </div>
+          <div class="screenshot">
+            <img src="images/declassified.jpg" alt="Declassified stamp" width="400px" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="clear">&nbsp;</p>
+    <div class="project_outer">
+      <div class="project">
+        <h3 id="dicegame">Dice Game</h3>
+        <div class="proj_container">
+          <div class="description">
+            <p>
+              The brief for the project was to create a 1 player dice game using javascript and DOM.</P>
+            <ul> 
+              <li>Roll the dice to begin the game</li>
+              <li>The dice appears on the first roll</li>
+              <li>When a dice is rolled, the score adds up</li>
+              <li>Once the score reaches 20, you win.</li>
+              <li>However, if you roll a ‘1’ then you lose</li>
+              <li>If the player won or lost, the player can start the game again</li>
+            </ul>
+            <p>
+              A further challenge was to then create a 2 player version of the game.
+            </p>
+            <ul>
+              <li>
+                <a target="_blank" href="https://greean.github.io/dicegame/" title="Link to Dice Game - 1 Player(deployed on GitHub)">Dice Game - 1 Player</a></li>
+              <li>
+                <a target="_blank" href="https://greean.github.io/dicegame_2player/" title="Link to Dice Game - 2 Players (delpoyed on GitHub)">Dice Game - 2 Players</a></li>
+            </ul>
+          </div>
+          <div class="screenshot">
+            <img src="images/dice_2player.png" alt="Screenshot of 2 Player Dicegame">
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>&nbsp;</p>
       <!-- <h3 id="fitness">So4Fit</h3>
       <p>
         Info about the project</p>
       <p>&nbsp;</p>       -->
-    </div>
     <footer class="footer">
       <ul>
         <!-- <li>

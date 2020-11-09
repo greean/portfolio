@@ -18,12 +18,12 @@ body {
   letter-spacing: 0.5px;
   margin: 0;
   min-height: 100%;
-  background-image: url(images/grid.png);
+  background-image: url(images/green_grid.png);
   position: relative;
 }
 
 header {
-  background-color: darkslateblue;
+  background-color: #61892f;
 }
 
 h1, h2 {
@@ -38,12 +38,25 @@ h1 {
 }
 
 h2 {
-  color: darkslateblue;
+  color: rgb(97, 137, 47);
+}
+
+h3 {
+  color: #b2bda6;
+  letter-spacing: 2.5px;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px solid rgb(0, 60, 0);
+  background: linear-gradient(
+    90deg, 
+    rgb(1, 30, 1) 0%, 
+    rgb(0, 60, 0) 100%);
 }
 
 p.clear {
   clear: both;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 .flex-nav a, .footer a {
@@ -57,6 +70,7 @@ p.clear {
   width: 100%;
   text-align: center;
   transition:all 0.9s;
+  min-height: 90px;
 }
 
 .flex-nav a:hover, .footer a:hover {
@@ -67,7 +81,15 @@ p.clear {
   max-width: 1200px;
   margin: 0 auto;
   padding:50px;
-  background-color: silver;
+  background-color: rgb(1, 70, 1);
+  background: linear-gradient(
+    90deg, 
+    rgba(0, 12, 0, 0) 0%, 
+    rgba(0, 12, 0, 0.6) 5%, 
+    rgba(0, 50, 0, 0.8) 25%, 
+    rgba(1, 50, 0, 0.8) 75%, 
+    rgba(1, 12, 0, 0.6) 95%, 
+    rgba(0, 12, 0, 0) 100%);
 }
 
 /* Menu box */
@@ -106,6 +128,43 @@ p.clear {
   flex-basis: 100%;
 }
 
+.project_outer {
+  background-color: rgb(70, 80, 70);
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.project {
+  background-color: rgb(100, 130, 100);
+  padding: 10px 20px;
+  border-radius: 14px;
+  border: 1px solid rgb(100, 100, 100);
+}
+
+.proj_container {
+  
+  display: flex;
+  flex-direction: row;
+}
+
+.screenshot {
+  /* float: right; */
+  margin-left: 30px;
+}
+
+.screenshot img {
+  border-radius: 10px;
+}
+
+.description {
+  /* float: left; */
+  background-color: rgb(160, 160, 160);
+  border-radius: 10px;
+  border: 1px solid rgb(70, 80, 70);
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
 @media all and (max-width:1000px) {
   .flex-nav ul { 
     flex-wrap: wrap;
@@ -119,6 +178,11 @@ p.clear {
   .flex-nav li {
     flex-basis: 100%; /*split into 1 column*/
   }
+}
+
+.about p, .about ul {
+  color: rgb(214, 214, 214);
+  margin: 20px;
 }
 
 .footer ul{
